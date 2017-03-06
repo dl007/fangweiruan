@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仿微软官方商城</title>
+   <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/common.css">
+	<link rel="stylesheet" type="text/css" href="style/pad.css" media="(min-width:768px)">
+	<link rel="stylesheet" type="text/css" href="style/pc.css" media="(min-width:1000px)">
+	<link rel="stylesheet" type="text/css" href="style/pcm.css" media="(min-width:1200px)">
+	<link rel="stylesheet" type="text/css" href="style/pcw.css" media="(min-width:1366px)">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src='js/common.js'></script>
+</head>
+<body>
+    <!-- 哪里都少不了广告 -->
+	<div class="wrgg" id="wrgg">
+    Surface Pro 4 i5 热销机型优惠中 <a href="#">立即购买></a>
+    </div>
+    <!-- 头部logo、搜索、购物车、用户等 -->
+    <div class="header" id="header">
+        <div class="cw  clearfix">
+	      	<a href="#" class="u_logo"></a>
+	    	<div class="u_icon">
+	    	    <a href="#" class="u_help pcshow">支持与帮助</a>
+	    	    <a href="#" class="u_ask pcwshow">在线咨询</a>
+	    	    <span class="u_search_input pcshow"><input type="text" name="" placeholder="搜索" class="pcshow">
+	            <a href="#" class="u_search iconfont pcshow" >&#xe601;</a>
+	    	    </span>
+	    		<a href="#" class="u_search iconfont pchide" id="search_icon">&#xe601;</a>
+	    		<a href="#" class="u_shopcar iconfont">&#xe730;</a>
+                <span class="user_box" id="user_box">
+                    <a href="#" class="u_user iconfont pchide">&#xe66a;</a>
+                    <a href="#" class="login pcshow">登陆</a>
+                    <div class="login_content hide" id="login_content">
+                        <div class="lc_userlinks">
+                            <h4>我的账户</h4>
+                            <ul>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">下载软件版</a></li>
+                                <li><a href="#">地址管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="lc_userfns">
+                            <a href="#">登 录</a>
+                        </div>
+                    </div>
+                </span>
+	    	</div>
+        </div>
+        <div class="h_search hide" id="h_search">
+                <span class="h_search_input"><input type="text" name="" placeholder="搜索" class="">
+                <a href="#" class="h_search_btn iconfont">&#xe601;</a>
+                </span>
+        </div>
+        
+    </div>
+    <!-- 导航 -->
+    <div class="nav" id="nav">
+        <div class="cw clearfix">
+        	<span href="#" class="mr">仿微软官方商城</span>
+        	<span href="#" id="menu" class="menu iconfont">&#xe600;</span>
+        	<ul class="nav_list hide" id="nav_list">
+	    		<li id="m_menu1" class="fli"><a href="#">硬件</a><a class="nav_down iconfont hide">&#xe832;</a><a class="nav_up iconfont">&#xe833;</a>
+	                <ul class="m_list hide" id="m_list1">
+	                	<li><a href="#">Surface</a></li>
+	                	<li><a href="#">电脑与平板</a></li>
+	                	<li><a href="#">Xbox+游戏</a></li>
+	                	<li><a href="#">Windows Phone</a></li>
+	                	<li><a href="#">配件</a></li>
+	                </ul>
+	    	    </li>
+	    		<li id="m_menu2"><a href="#">软件</a><a class="nav_down iconfont hide">&#xe832;</a><a class="nav_up iconfont">&#xe833;</a>
+	                <ul class="m_list hide" id="m_list2">
+	                	<li><a href="#">Office</a></li>
+	                	<li><a href="#">Windows</a></li>
+	                	<li><a href="#">Apps and Windows 10 游戏</a></li>
+	                	<li><a href="#">Skype</a></li>
+	                	<li><a href="#">其他软件与服务</a></li>
+	                </ul>
+	    		</li>
+	    		<li><a href="#">商务</a></li>
+	    		<li><a href="#">教育</a></li>
+	    		<li><a href="#">以旧换新</a></li>
+	    		<li><a href="#" class="pchide">支持与帮助</a></li>
+	    		<li><a href="#" class="pchide">客服热线:400000000</a></li>
+    	    </ul>
+        </div>
+    </div>
+    <!-- 推荐图 -->
+    <div class="banner">
+    	<div class="cw clearfix">
+    		<div class="b_left">
+    			<a href="#"><img src="images/mob1.png" alt="新机汇"></a>
+    		</div>
+    		<div class="b_right">
+    			<a href="#" class="mob1"><img src="images/mob2.png"></a>
+    			<a href="#" class="mob2"><img src="images/mob3.png"></a>
+    			<a href="#" class="pc1"><img src="images/pc1.png"></a>
+    			<a href="#" class="pc2"><img src="images/pc2.png"></a>
+    		</div>
+    	</div>
+    </div>
+    <!-- 产品列表 -->
+    <div class="product">
+    	<div class="cw ">
+    	    <div class="clearfix">
+    	        	<!-- 热门商品名称开始 -->
+    		   	<ul class="pro_name">
+		    		<li><a href="#">Office 365</a></li>
+		    		<li><a href="#">Office 2016</a></li>
+		    		<li><a href="#">Windows</a></li>
+		    		<li><a href="#">Surface Book</a></li>
+		    		<li><a href="#">Surface Pro 4</a></li>
+		    		<li><a href="#">电脑与平板</a></li>
+		    		<li><a href="#">Xbox</a></li>
+		    		<li><a href="#">游戏</a></li>
+		    		<li><a href="#">教育</a></li>
+		    		<li><a href="#">配件</a></li>
+		    	</ul>
+		    	<!-- 热门商品名称结束 -->
+		    	<!-- 热门商品开始 -->
+		    	<ul class="pro_list1 clearfix">
+		    		<li><a href="#"><img src="images/mob4.png"><p>按年订阅新理念，协同办公新体验，PC/Mac兼容</p></a></li>
+		    		<li><a href="#"><img src="images/mob5.png"><p>商务套餐为您增加澎湃动力，购买热线：400-805-6783</p></a></li>
+		    		<li><a href="#"><img src="images/mob6.png"><p>旧机换购指定商品最高额外补贴800元，回收机型万余种</p></a></li>
+		    		<li><a href="#"><img src="images/mob7.png"><p>教育优惠：学生教师专属折扣，Surface购机有礼</p></a></li>
+		    		<li><a href="#"><img src="images/mob8.png"><p>戴尔惠普畅销机型开学季享优惠，购机再加赠耳机</p></a></li>
+		    		<li><a href="#"><img src="images/mbl4.png"><p>Surface Book i7 256G保护套餐，为您节省390元</p></a></li>
+		    	</ul>
+		    </div>	
+		    	<!-- 热门商品结束 -->
+		    	<!-- 新品推荐开始 -->
+		    	<ul class="newpro_list clearfix">
+		    		<li class="problock clearfix">
+                            <div class="img"><img src="images/pro_1.png"></div>
+    		    			<div class="desc">
+		    				    <a href="#">
+		    				         <h4>Xbox One 无线控制器</h4>
+                                     <div class="price">￥489</div>
+		    				    </a>
+		    				</div>
+		    			    <div class="btn"><a href="#">查看详情</a></div>
+		    		</li>
+		    		<li class="problock clearfix">
+                            <div class="img"><img src="images/pro_2.png"></div>
+    		    			<div class="desc">
+		    				    <a href="#">
+		    				         <h4>Xbox 无线控制器（新）</h4>
+                                     <div class="price">￥489</div>
+		    				    </a>
+		    				</div>
+		    			    <div class="btn"><a href="#">查看详情</a></div>
+		    		</li>
+		    		<li class="problock clearfix">
+                            <div class="img"><img src="images/pro_3.png"></div>
+    		    			<div class="desc">
+		    				    <a href="#">
+		    				         <h4>无双大蛇 2 终极版</h4>
+                                     <div class="price">￥199</div>
+		    				    </a>
+		    				</div>
+		    			    <div class="btn"><a href="#">查看详情</a></div>
+		    		</li>
+                    <li class="problock clearfix">
+                            <div class="img"><img src="images/pro_4.png"></div>
+    		    			<div class="desc">
+		    				    <a href="#">
+		    				         <h4>微软 Sculpt 无线便携鼠标</h4>
+                                     <div class="price">￥109</div>
+		    				    </a>
+		    				</div>
+		    			    <div class="btn"><a href="#">查看详情</a></div>
+		    		</li>
+		    	</ul>
+    	      
+    	        
+		    	<!-- 新品推荐结束 -->
+		    	<!-- 店长推荐开始 -->
+		    	<div class="rec clearfix">
+		    	    <div class="rec_icon"><img src="images/pc_rec.png"></div>
+		    	    <div class="rec_con">
+			    	    <ul class="titl clearfix" id="titl">
+			    			<li class="active">以旧换新</li>
+			    			<li >开发者专区</li>
+			    		</ul>
+			    		<ul class="rec_goods" id="rec_goods">
+			    			<li class=""><a href="#"><img src="images/mobile1.jpg" class="padhide"><img src="images/pc_res1.png" class="padshow"></a></li>
+			    			<li class="hide"><a href="#"><img src="images/mobile.jpg" class="padhide"><img src="images/pc_res2.png" class="padshow"></a></li>
+			    		</ul>
+		    	    </div>
+		    	</div>
+		    	<!-- 店长推荐结束 -->
+    	</div>
+        
+    </div>
+   <!--  产品列表结束 -->
+   <!--   承诺开始 -->
+    <div class="promise_box">
+    	<div class="cw">
+    		<p>微软商城，四大承诺</p>
+    		<div class="prom_blist clearfix pcshow">
+    			<a href="#"><img src="images/prom_b1.png"></a>
+    			<a href="#"><img src="images/prom_b2.png"></a>
+    			<a href="#"><img src="images/prom_b3.png"></a>
+    			<a href="#"><img src="images/prom_b4.png"></a>
+    		</div>
+    		<div class="prom_mlist pchide">
+    			<a href="#">30天退换货</a>
+    			<a href="#"><i></i>2年有限保修</a>
+    			<a href="#"><i></i>24×7在线服务</a>
+    			<a href="#"><i></i>急速上手服务</a>
+    		</div>
+    		<div class="service_info pcshow">
+    			<div class="info"><i></i>微软官方商城服务热线：4008822059   微软中国技术支持热线：4008203800</div>
+    			<div class="info"><i></i><a href="#">客服及产品专家</a></div>
+    			<div class="info"><i></i>微软官方商城企业服务热线：4008056783    想了解更多，请点击<a href="#">这里</a></div>
+    		</div>
+    	</div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+    	<div class="footer_bar cw">
+    		<div class="footer_signup">
+    			<span>促销信息抢先看，更享专属优惠</span>
+    			<div class="footer_inputbox">
+    				<input type="text" name="" placeholder="请输入邮件地址">
+    				<span>订阅</span>
+    			</div>
+    			<a href="#">隐私条款</a>
+    		</div>
+            <ul class="clearfix" id="footerlist">
+            	<li><span>产品类别</span>
+                    <ul class="padshow">
+                    	<li><a href="#">Surface</a></li>
+                    	<li><a href="#">电脑与平板</a></li>
+                    	<li><a href="#">Xbox</a></li>
+                    	<li><a href="#">Office</a></li>
+                    	<li><a href="#">Windows</a></li>
+                    	<li><a href="#">Visual Studio</a></li>
+                    	<li><a href="#">其他软件与服务</a></li>
+                    	<li><a href="#">配件</a></li>
+                    </ul>
+            	</li>
+            	<li class="padhide">
+            		<span>账户信息</span>
+            		<ul class="padshow">
+            			<li><a href="#">账户详情</a></li>
+            			<li><a href="#">订单跟踪</a></li>
+            			<li><a href="#">订单历史</a></li>
+            			<li><a href="#">软件密钥和下载</a></li>
+            		</ul>
+            	</li>
+            	<li class="padhide">
+            		<span>关于我们</span>
+            		<ul class="padshow">
+            			<li><a href="#">查找店铺</a></li>
+            			<li><a href="#">网站地图</a></li>
+            			<li><a href="#">微软店中店</a></li>
+            		</ul>
+            	</li>
+            	<li class="padshow">
+            		<span>账户信息</span>
+            		<ul>
+            			<li><a href="#">账户详情</a></li>
+            			<li><a href="#">订单跟踪</a></li>
+            			<li><a href="#">订单历史</a></li>
+            			<li><a href="#">软件密钥和下载</a></li>
+            		</ul>
+            		<span>关于我们</span>
+            		<ul>
+            			<li><a href="#">查找店铺</a></li>
+            			<li><a href="#">网站地图</a></li>
+            			<li><a href="#">微软店中店</a></li>
+            		</ul>
+            	</li>
+            	<li>
+            		<span>支持与帮助</span>
+            		<ul class="padshow">
+            			<li><a href="#">产品支持信息</a></li>
+            			<li><a href="#">退换货政策</a></li>
+            			<li><a href="#">常见问题</a></li>
+            			<li><a href="#">软件产品问题</a></li>
+            			<li><a href="#">教育优惠相关问题</a></li>
+            			<li><a href="#">购物流程</a></li>
+            			<li><a href="#">支付与配送</a></li>
+            			<li><a href="#">售后服务</a></li>
+            		</ul>
+            	</li>
+            	<li>
+            		<span>关注我们</span>
+            		<ul class="padshow">
+            			<li><a href="#" class="xinlang"></a></li>
+            		</ul>
+            	</li>
+            	<li>
+            		<span>热门资源</span>
+            		<ul class="padshow">
+            			<li><a href="#">Surface Pro 4</a></li>
+            			<li><a href="#">Surface Book</a></li>
+            			<li><a href="#">Xbox One</a></li>
+            			<li><a href="#">Office 365</a></li>
+            			<li><a href="#">Office for Mac</a></li>
+            			<li><a href="#">优惠信息</a></li>
+            			<li><a href="#">教育专区</a></li>
+            			<li><a href="#">商务专区</a></li>
+            		</ul>
+            	</li>
+            </ul>
+    	</div>
+    </div>	
+   <!--  版权 -->
+    <div class="copyright">
+        <div class="copy_box cw clearfix">
+        		<div><span class="cr_icon"></span><span>中国-简体中文</span></div>
+        		<span>隐私权声明</span><span>商标</span><span>沪ICP备12038052号-4</span><span>© 2016 Microsoft</span>
+        </div>
+    </div>
+</body>
+</html>

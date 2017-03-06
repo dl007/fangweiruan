@@ -1,0 +1,69 @@
+@charset:"utf-8";
+/*产品列表*/
+.product{
+	margin-top: 51px;
+}
+.product .cw{
+	width: 90%;
+     margin: 0 auto;
+}
+.pro_name{
+	float: left;
+	width: 23.25%;
+}
+.pro_name li{
+	width: 100%;
+	line-height: 40px;
+	height: 40px;
+	font-size: 19px;
+	text-indent: 20px;
+}
+.pro_list1{
+	float: left;
+	width: 74.75%;
+}
+.pro_list1 li{
+	float: left;
+    width: 23.25;
+}
+.pro_list1 li:nth-child(2n){
+	float:left;
+}
+.pro_list1 li:nth-child(3n-1){
+   margin: 0 1.25%;
+}
+.pro_list1 li img{
+	width: 100%;
+}
+.pro_list1 li p{
+	font-size: 14px;
+	line-height: 18px;
+	min-height: 90px;
+}
+/*店长推荐*/
+.rec_icon{
+	float: left;
+	display:block;
+	width:24.8%;
+}
+.rec_icon img{
+	width: 100%;
+}
+.rec_con{
+	position: relative;
+	float: right;
+	width:72.8%;
+}
+.rec_con .titl{
+	position: absolute;
+	height:27.907%;
+	box-sizing: border-box;
+	width: 100%;
+}
+.rec_con .titl li{
+	box-sizing: border-box;
+     height: 100%;
+}
+.rec_con .rec_goods{
+    margin-top:6.1051%;
+}

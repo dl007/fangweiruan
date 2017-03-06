@@ -1,0 +1,30 @@
+@charset:"utf-8";
+/*logo、搜索等等*/
+.u_ask{
+	color: #000;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-right: 300px;
+}
+.u_search_input{
+	width: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+/*公用*/
+.pcwshow{
+	display:inline-block;
+}
+.cw{
+	width:90%;
+	max-width: 1180px;
+	margin: 0 auto;
+}

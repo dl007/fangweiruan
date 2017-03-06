@@ -1,0 +1,197 @@
+@charset:"utf-8";
+/*logo、搜索等等*/
+.header{
+   padding: 0;
+}
+.u_logo{
+	margin: 5px 0;
+	top:14.5px;
+}
+.u_help{
+	color: #000;
+	font-size: 12px;
+	margin-left: 20px;
+
+}
+.login{
+	color: #0078d7;
+	font-size: 14px;
+	margin-left: 15px;
+}
+.u_help{
+	margin-right: 65px;
+}
+.u_search{
+	line-height: 20px;
+}
+.u_search_input{
+position: relative;
+display: inline-block;
+width: 430px;
+height: 28px;
+border: 1px solid #707070;
+padding: 0 30px 0 10px;
+
+}
+
+.u_search_input input{
+	/*display: inline-block;*/
+	width: 100%;
+	height: 100%;
+	line-height: 28px;
+
+}
+.u_search_input .u_search{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.h_search{
+	display: none;
+}
+/*登陆*/
+.user_box{
+   padding: 5px 18px 10px 0px;
+   margin-left: 50px;
+}
+.user_box_active{
+	
+}
+.user_box_active :after{
+   width:60px;
+}
+/*导航*/
+.nav{
+	position: relative;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+}
+.mr{
+  float: left;
+  font-size: 16px;
+  line-height: 50px;
+  padding-left: 19px;
+  color: #555;
+}
+.menu{
+ display: none;
+}
+.nav_list{
+	position: static;
+	display: inline-block;
+    width: auto;
+    line-height: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+.nav_list li{
+   float: left;
+   margin-left:25px; 
+   position: relative;
+}
+.nav_list .nav_down,.nav_list .nav_up{
+	margin-left: 5px;
+	float: none;
+	padding-right: 12px;
+}
+.nav_list ul{
+	position: absolute;
+    white-space: nowrap;
+     left: 0;
+     top: 100%;
+     background: #fff;
+     border: 1px solid #ccc;
+     border-top-color: #fff;
+}
+.nav_list ul li{
+    width: 100%;
+	margin-left: 0;
+	padding-right:30px; 
+}
+.nav_list ul a{
+	margin-left: 0;
+    color: #555;
+    
+}
+/*四大承诺*/
+.promise_box p{
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	font-size: 24px;
+}
+.prom_blist{
+	width: 100%;
+}
+.prom_blist a{
+   float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+.prom_blist a:last-child{
+   margin-right: 0;
+}
+.prom_blist a img{
+	width: 100%;
+
+}
+.service_info{
+	text-align: center;
+}
+.service_info .info{
+	display: inline-block;
+   line-height: 40px;
+   height: 40px;
+   font-size: 18px;
+   margin-right: 50px;
+}
+.service_info .info i{
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  position: relative;
+  top: 10px;
+  background: url(../images/tele.png) 0 0 no-repeat;
+}
+.service_info .info:nth-child(2) i{
+	background: url(../images/wen.png) 0 0 no-repeat;
+}
+.service_info .info a{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*公用*/
+.pcshow{
+	display:inline-block;
+}
+.pchide{
+	display: none;
+}
+.cw{
+	width:90%;
+	margin: 0 auto;
+}
