@@ -194,6 +194,7 @@ float: left;
  line-height: 50px;
  font-weight: normal;
  color: #0078d7;
+ cursor: pointer;
 }
 .nav .active{
   position: relative;
@@ -209,6 +210,9 @@ float: left;
 	width: 100%;
 	background: #fff;
 }
+.nav_list>li.active1{
+	background-color: #cfe7f9;
+}
 .nav_list li a{
 	height: 45px;
 	line-height: 45px;
@@ -220,6 +224,7 @@ float: left;
 	padding-right: 12px;
 }
 .nav_list ul{
+	background: #fff;
     padding-left: 20px;
 
 }

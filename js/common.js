@@ -12,6 +12,7 @@ $(document).ready(function() {
     	   $("#nav_list > li > ul").hide();
     	   $("#nav_list > li > .nav_down").hide();
     	   $("#nav_list > li > .nav_up").show();
+    	   $("#nav_list > li").removeClass('active1');
 
     });
     //阻止（点击登陆页，触发隐藏）
@@ -31,9 +32,11 @@ $(document).ready(function() {
     $("#nav_list > li").click(function(event) {
     	// 先把没收的收掉
     	$("#nav_list > li ul").not($(this).children('ul')).hide();
+    	$("#nav_list > li").not($(this)).removeClass('active1');
         $("#nav_list > li").not($(this)).children('.nav_down').hide();
         $("#nav_list > li").not($(this)).children('.nav_up').show();
         // 再设置
+        $(this).toggleClass('active1');
     	$(this).children('ul').slideToggle();
     	$(this).find(".nav_down").toggle();
     	$(this).children(".nav_up").toggle();
